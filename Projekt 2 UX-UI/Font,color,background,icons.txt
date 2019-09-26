@@ -1,0 +1,11 @@
+/*Text-color*/
+Color:#EE7C7C;
+AND #FFFFFF;
+
+/*Hamburger*/
+Color:#EE7C7C;
+
+/*Nav-bar*/
+Color:#EE7C7C;
+AND Hover-color:#FFFFFF;
+
