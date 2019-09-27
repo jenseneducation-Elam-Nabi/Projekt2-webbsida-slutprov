@@ -9,6 +9,7 @@ body {
   background: url(/Projekt2-webbsida-slutprov/Images/computer1.jpg);
   background-repeat: no-repeat;
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 #Main-section {
@@ -62,7 +63,8 @@ ul a:active {
 }
 
 .footer-container img {
-  width: 10%;
+  width: 8%;
+  margin-top: 5%;
   margin-left: 45%;
 }
 
@@ -85,10 +87,10 @@ ul a:active {
   }
 
   ul a {
-    margin: 0 4vw;
-    padding: 1%;
+    margin: 0 6vw;
+    padding: 4%;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #fff;
     transition: 0.2s;
@@ -129,4 +131,43 @@ ul a:active {
     background: black;
     width: 100%;
   }
+
+  .footer-container img {
+    margin-top: 29%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "section-one section-two"
+      "section-three section-four"
+      "section-five section-six";
+
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+  }
+
+  h3 {
+    color: #fff;
+  }
+  .section-one,
+  .section-two,
+  .section-three,
+  .section-four,
+  .section-five,
+  .section-six {
+    color: #ffc107;
+    display: block;
+    font-size: 0.7rem;
+    padding: 15%;
+    background: #000;
+  }
+
+  /* .icon {
+    width: 60%;
+    height: 60%;
+  } */
 }
