@@ -11,14 +11,20 @@ body {
   scroll-behavior: smooth;
 }
 
-#Main-section {
+#Main-section,
+#loggan {
   margin: auto;
   display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;
   flex-flow: column;
-  margin-top: 20%;
+  margin-top: 6%;
+}
+
+#loggan {
+  width: 10%;
+  height: 10%;
 }
 
 h1 {
@@ -82,7 +88,8 @@ ul a:active {
   margin-right: 45%;
 }
 
-h3 {
+h3,
+h5 {
   color: #fff;
 }
 .section-one,
@@ -95,11 +102,24 @@ h3 {
   display: block;
   font-size: 0.7rem;
   padding: 5%;
-  /* background: #000; */
 }
 
 #laptopred {
   margin-left: 60%;
+}
+
+.Kim {
+  width: 14%;
+  height: 14%;
+  margin-left: 26%;
+  margin-top: 11%;
+}
+
+.about-me {
+  color: #ffc107;
+  width: 40%;
+  margin-left: 42%;
+  margin-top: -23%;
 }
 
 @media screen and (max-width: 667px) {

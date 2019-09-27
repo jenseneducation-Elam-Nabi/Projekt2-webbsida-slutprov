@@ -15,3 +15,6 @@ Angle-Down: https://maxcdn.icons8.com/Share/icon/Arrows/chevron_down1600.png
 Angle-Up: https://icons8.com/icons/set/chevron-up
 Icon-pack: https://icon-icons.com/pack/Digital-marketing-Line-art-FREE-Icons/1133
 
+/*Logo*/
+https://cdn.pixabay.com/photo/2016/08/25/07/30/orange-1618917_960_720.png
+
