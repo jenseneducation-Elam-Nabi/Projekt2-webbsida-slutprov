@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: url(/Projekt2-webbsida-slutprov/Images/computer1.jpg);
+  background-repeat: no-repeat;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#Main-section {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-flow: column;
+  margin-top: 20%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1,
+h2 {
+  color: #ffc107;
+}
+
+h4 {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 1%;
+}
+
+ul a {
+  margin: 0 4vw;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+
+ul a:hover {
+  color: #ffc107;
+}
+
+ul a:active {
+  color: gray;
+}
+
+.footer-container img {
+  width: 10%;
+  margin-left: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    background: url(/Projekt2-webbsida-slutprov/Images/CompWhitesmall.jpg);
+    background-repeat: no-repeat;
+    font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  li {
+    display: inline;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    padding: 1%;
+  }
+
+  ul a {
+    margin: 0 4vw;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  ul a:hover {
+    color: #ffc107;
+  }
+
+  ul a:active {
+    color: #gray;
+  }
+
+  #Main-section {
+    height: 100vh;
+  }
+
+  #Main-section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-flow: column;
+    margin-top: -10%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1,
+  h2 {
+    color: #ffc107;
+  }
+  h4 {
+    color: #fff;
+    background: black;
+    width: 100%;
+  }
+}

@@ -1,11 +1,15 @@
 /*Text-color*/
-Color:#EE7C7C;
+Color:#FFC107;
 AND #FFFFFF;
-
-/*Hamburger*/
-Color:#EE7C7C;
 
 /*Nav-bar*/
 Color:#EE7C7C;
 AND Hover-color:#FFFFFF;
+
+/*Font*/
+Montserrat:
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+/*Icon*/
+Angle-Down: https://maxcdn.icons8.com/Share/icon/Arrows/chevron_down1600.png
 
