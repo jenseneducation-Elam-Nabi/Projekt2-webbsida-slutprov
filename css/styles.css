@@ -6,8 +6,7 @@
 
 html,
 body {
-  background: url(/Projekt2-webbsida-slutprov/Images/computer1.jpg);
-  background-repeat: no-repeat;
+  background: #000;
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
@@ -68,11 +67,45 @@ ul a:active {
   margin-left: 45%;
 }
 
-@media screen and (max-width: 768px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-areas:
+    "section-one section-two"
+    "section-three section-four"
+    "section-five section-six";
+
+  height: 100vh;
+  width: 50%;
+  margin: auto;
+  margin-top: -45%;
+  margin-right: 45%;
+}
+
+h3 {
+  color: #fff;
+}
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six {
+  color: #ffc107;
+  display: block;
+  font-size: 0.7rem;
+  padding: 5%;
+  /* background: #000; */
+}
+
+#laptopred {
+  margin-left: 60%;
+}
+
+@media screen and (max-width: 667px) {
   html,
   body {
-    background: url(/Projekt2-webbsida-slutprov/Images/CompWhitesmall.jpg);
-    background-repeat: no-repeat;
+    background: #000;
     font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -101,7 +134,7 @@ ul a:active {
   }
 
   ul a:active {
-    color: #gray;
+    color: gray;
   }
 
   #Main-section {
@@ -133,7 +166,7 @@ ul a:active {
   }
 
   .footer-container img {
-    margin-top: 29%;
+    margin-top: 40%;
   }
 
   .grid-container {
@@ -164,10 +197,6 @@ ul a:active {
     font-size: 0.7rem;
     padding: 15%;
     background: #000;
+    width: 50%;
   }
-
-  /* .icon {
-    width: 60%;
-    height: 60%;
-  } */
 }
