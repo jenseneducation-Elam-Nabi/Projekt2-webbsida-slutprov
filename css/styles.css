@@ -22,6 +22,12 @@ body {
   flex-flow: column;
 }
 
+.body-background {
+  background: url("../Images/DarkPointer.jpeg") no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+}
+
 #Main-section {
   display: flex;
   flex-flow: column;
@@ -31,6 +37,11 @@ body {
 
 #loggan {
   width: 100px;
+}
+
+.card p {
+  background: #03171e;
+  border-radius: 30%;
 }
 
 h1 {
@@ -67,7 +78,6 @@ h4 {
 
 .nav-container ul a {
   margin: 0 1rem;
-  padding: 10px;
   font-weight: bold;
   font-size: 0.9rem;
   text-decoration: none;
@@ -79,7 +89,7 @@ h4 {
   color: #ffc107;
 }
 
-.nav-container ul a:active {
+.nav-container ul a.active {
   color: gray;
 }
 
@@ -161,7 +171,7 @@ h4 {
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: rem; */
 }
 .contact-form h1 {
   margin-top: 0;
@@ -206,8 +216,6 @@ h4 {
   width: 80%;
   padding: 10px;
   margin: 2rem auto;
-  background: linear-gradient(#ffc107 10%, #000 90%);
-  border-radius: 10px;
   margin-top: 3rem;
 }
 
@@ -215,7 +223,7 @@ h4 {
 hr {
   margin-bottom: 1rem;
   text-align: center;
-  color: #fff;
+  color: #ffc107;
 }
 
 .card p {
@@ -345,6 +353,33 @@ p {
 
   .laptop-sm {
     display: none;
+  }
+
+  .contact-form {
+    margin-top: 10rem;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .flex-container .card,
+  .contact-form {
+    margin: 0;
+  }
+
+  .flex-container .card {
+    width: 30%;
+  }
+
+  .flex-container .contact-form {
+    width: 50%;
+  }
+
+  .flex-container .card {
+    margin-top: auto;
   }
 }
 
