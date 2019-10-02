@@ -41,7 +41,7 @@ body {
 
 .card p {
   background: #03171e;
-  border-radius: 30%;
+  border: outset #03171e;
 }
 
 h1 {
@@ -65,7 +65,12 @@ h4 {
   width: 80%;
   margin: auto;
   background: #000;
-  border-radius: 10px;
+  border: outset #000;
+}
+
+h4::before {
+  content: "- ";
+  color: #ffc107;
 }
 
 .nav-container ul {
@@ -144,15 +149,21 @@ h4 {
   margin: 0.1rem 0 0 0;
 }
 
+.icon {
+  border-radius: 100%;
+  border: outset #ffc107;
+}
+
 .Kim {
   width: 100px;
   height: 100px;
   display: block;
-  border-radius: 50%;
+  border-radius: 50% 1px;
+  margin: 0 auto 1rem auto;
 }
 
-#portrait-kim {
-  margin: 0 auto 1rem auto;
+span {
+  color: #ffc107;
 }
 
 .about-me {
@@ -171,7 +182,6 @@ h4 {
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
-  /* margin-top: rem; */
 }
 .contact-form h1 {
   margin-top: 0;
@@ -210,6 +220,7 @@ h4 {
   cursor: pointer;
   margin-top: 8px;
   width: 100%;
+  border: outset #ffc110;
 }
 
 .card {
@@ -269,17 +280,27 @@ p {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contact-form h1 {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (min-width: 375px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact-form h1 {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (min-width: 425px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-form h1 {
+    margin-top: 4rem;
   }
 }
 
@@ -332,6 +353,10 @@ p {
     width: 30%;
     text-align: center;
   }
+
+  .contact-form h1 {
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -381,127 +406,8 @@ p {
   .flex-container .card {
     margin-top: auto;
   }
-}
 
-/* @media screen and (max-width: 812px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:
-      "section-one"
-      "section-two"
-      "section-three"
-      "section-four"
-      "section-five"
-      "section-six";
-
-    height: 100vh;
-    width: 100%;
-    margin: auto;
+  .contact-info ul li {
+    padding: -0.5rem;
   }
 }
-
-@media screen and (max-width: 667px) {
-  html,
-  body {
-    background: #000;
-    font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  #laptopred {
-    display: none;
-  }
-
-  li {
-    display: inline;
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-  }
-
-  ul a {
-    margin: 0 6vw;
-    font-weight: bold;
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.2s;
-  }
-
-  ul a:hover {
-    color: #ffc107;
-  }
-
-  ul a:active {
-    color: gray;
-  }
-
-  #Main-section {
-    height: 100vh;
-  }
-
-  #Main-section {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    flex-flow: column;
-    margin-top: -10%;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h1,
-  h2 {
-    color: #ffc107;
-  }
-  h4 {
-    color: #fff;
-    background: black;
-    width: 100%;
-  }
-
-  .footer-container img {
-    margin-top: 40%;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-      "section-one"
-      "section-two"
-      "section-three"
-      "section-four"
-      "section-five"
-      "section-six";
-
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-  }
-
-  h3 {
-    color: #fff;
-  }
-  .section-one,
-  .section-two,
-  .section-three,
-  .section-four,
-  .section-five,
-  .section-six {
-    color: #ffc107;
-    display: block;
-    font-size: 0.7rem;
-    padding: 15%;
-    background: #000;
-    width: 50%;
-  }
-} */
