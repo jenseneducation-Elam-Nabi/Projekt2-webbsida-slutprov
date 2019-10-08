@@ -28,6 +28,11 @@ body {
   height: 100vh;
 }
 
+hr {
+  width: 100px;
+  margin: auto;
+}
+
 #Main-section {
   display: flex;
   flex-flow: column;
@@ -133,6 +138,7 @@ h4 {
   font-size: 0.7rem;
   padding: 5%;
   text-align: center;
+  border: 0.5px #333 solid;
 }
 
 .laptop-sm {
@@ -150,7 +156,7 @@ h4 {
 }
 
 .icon {
-  border-radius: 100%;
+  border-radius: 50%;
   border: outset #ffc107;
 }
 
@@ -220,7 +226,10 @@ span {
   cursor: pointer;
   margin-top: 8px;
   width: 100%;
-  border: outset #ffc110;
+}
+
+.btn:hover {
+  background: #ffd86e;
 }
 
 .card {
@@ -368,6 +377,10 @@ p {
       "section-one section-two"
       "section-three section-four"
       "section-five section-six";
+  }
+
+  .grid-container > section:nth-child(odd) {
+    background: rgb(15, 14, 14);
   }
 
   .laptop-lg {
